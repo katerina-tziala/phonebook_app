@@ -32,7 +32,7 @@ Access the app here: <a href="https://phonebook-app-kt.herokuapp.com/" target="b
 
         const baseUrl = 'api/persons';
 
-**2.** Navigate from your terminal inside the /backend folder and run ***build-frontend*** and then ***npm run watch***.
+**2.** Navigate from your terminal inside the /backend folder and run ***npm run build-frontend*** and then ***npm run watch***.
 <br/>
 <br/>
 <h3>Running FrontEnd Locally With Deployed Backend To Heroku</h3>
