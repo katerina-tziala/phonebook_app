@@ -7,3 +7,6 @@ backend/build/
 
 frontend/node_modules/
 frontend/package-lock.json
+
+build/
+index.js
