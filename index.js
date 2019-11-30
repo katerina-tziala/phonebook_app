@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const PORT = process.env.PORT || 3001;
 
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static('build'));
@@ -23,7 +24,6 @@ app.use(morgan((tokens, req, res) => {
     }
     return stringParts.join(' ');
   }));
-
 
 const generateId = () => {
     const maxId = persons.length > 0 ? Math.max(...persons.map(person => person.id)) : 0;
