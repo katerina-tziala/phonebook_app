@@ -4,7 +4,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const PORT = process.env.PORT || 3001;
-
+app.use(express.static('build'));
 app.use(cors());
 app.use(bodyParser.json());
 app.use(morgan((tokens, req, res) => {
