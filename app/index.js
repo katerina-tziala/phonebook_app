@@ -4,9 +4,10 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const PORT = process.env.PORT || 3001;
-app.use(express.static('build'));
+
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.static('build'));
 app.use(morgan((tokens, req, res) => {
     const stringParts = [];
     const method = tokens.method(req, res);
