@@ -15,7 +15,7 @@ const PersonForm = (props) => {
                 <button type="submit" disabled={props.isDisabled}>add</button>
             </div>
         </form>
-    )
+    );
 };
 
 export default PersonForm;

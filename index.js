@@ -1,4 +1,5 @@
 require('dotenv').config();
+const process = require('process');
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -19,10 +20,10 @@ app.use(morgan((tokens, req, res) => {
     stringParts.push(tokens.url(req, res));
     stringParts.push(tokens.status(req, res));
     stringParts.push(tokens.res(req, res, 'content-length'));
-    stringParts.push("-");
+    stringParts.push('-');
     stringParts.push(tokens['response-time'](req, res));
     stringParts.push('ms');
-    if (method === "POST") {
+    if (method === 'POST') {
         stringParts.push(JSON.stringify(req.body));
     }
     return stringParts.join(' ');
@@ -48,7 +49,7 @@ const returnBadRequestError = (response, errorMessage) => {
     });
 };
 
-app.get('/api/info', (req, response) => {
+app.get('/api/info', (req, response, next) => {
     return establishConnection().then(() => {
         return Person.find({}).then(persons => {
             closeDBConnection();
@@ -56,7 +57,7 @@ app.get('/api/info', (req, response) => {
             response.send(info);
         });
     }).catch((error) => {
-        error.name = "DBConnectionError";
+        error.name = 'DBConnectionError';
         return next(error);
     });
 });
@@ -68,7 +69,7 @@ app.get('/api/persons', (request, response, next) => {
             return response.json(persons.map(person => person.toJSON()));
         });
     }).catch((error) => {
-        error.name = "DBConnectionError";
+        error.name = 'DBConnectionError';
         return next(error);
     });
 });
@@ -87,7 +88,7 @@ app.get('/api/persons/:id', (request, response, next) => {
             return next(error);
         });
     }).catch((error) => {
-        error.name = "DBConnectionError";
+        error.name = 'DBConnectionError';
         return next(error);
     });
 });
@@ -117,7 +118,7 @@ app.post('/api/persons/', (request, response, next) => {
             return next(error);
         });
     }).catch((error) => {
-        error.name = "DBConnectionError";
+        error.name = 'DBConnectionError';
         return next(error);
     });
 });
@@ -138,7 +139,7 @@ app.put('/api/persons/:id', (request, response, next) => {
             return next(error);
         });
     }).catch((error) => {
-        error.name = "DBConnectionError";
+        error.name = 'DBConnectionError';
         return next(error);
     });
 });
@@ -151,7 +152,7 @@ app.delete('/api/persons/:id', (request, response, next) => {
             return next(error);
         });
     }).catch((error) => {
-        error.name = "DBConnectionError";
+        error.name = 'DBConnectionError';
         return next(error);
     });
 });
@@ -188,5 +189,5 @@ const errorHandler = (error, request, response, next) => {
 app.use(errorHandler);
 
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`)
+    console.log(`Server running on port ${PORT}`);
 });

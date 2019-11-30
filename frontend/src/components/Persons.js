@@ -7,7 +7,7 @@ const Persons = ({ persons, deletePerson }) => {
         <div>
             {displayPersons()}
         </div>
-    )
+    );
 };
 
 export default Persons;
