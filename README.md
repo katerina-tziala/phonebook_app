@@ -8,7 +8,7 @@ Access the app here: <a href="https://phonebook-app-kt.herokuapp.com/" target="b
 
 <h2>Setup of the Project</h2>
 
-**1.** Fork and clone the this repository.
+**1.** Fork and clone this repository.
 
 **2.** Navigate from your terminal inside the /backend folder and run ***npm install*** to install the project's dependencies.
 
