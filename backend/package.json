@@ -10,7 +10,11 @@
     "build-frontend": "cd ../frontend && npm run build --prod && move build ../backend/",
     "lint": "eslint ."
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katerina-tziala/phonebook_app/tree/master/backend"
+  },
+  "author": "Katerina Tziala",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

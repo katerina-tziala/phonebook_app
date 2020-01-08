@@ -1,5 +1,5 @@
 {
-  "name": "phonebook_backend",
+  "name": "phonebook_app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,11 @@
     "deploy": "npm run build-frontend && git add . && git commit -m uibuild && npm run heroku-push",
     "logs:prod": "heroku logs --tail"
   },
-  "author": "katerina tziala",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katerina-tziala/phonebook_app"
+  },
+  "author": "Katerina Tziala",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
