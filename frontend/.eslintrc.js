@@ -1,9 +1,14 @@
 module.exports = {
     'env': {
         'browser': true,
+        'amd': true,
+        'node': true,
         'es6': true
     },
-    'extends': 'eslint:recommended',
+    'extends': [
+        'eslint:recommended',
+        'plugin:react/recommended'
+    ],
     'globals': {
         'Atomics': 'readonly',
         'SharedArrayBuffer': 'readonly'
@@ -38,6 +43,14 @@ module.exports = {
         ],
         "arrow-spacing": [
             "error", { "before": true, "after": true }
-        ]
+        ],
+        "react/prop-types": 0
+    },
+    'settings': {
+        'react': {
+            'pragma': 'React',
+            'version': 'detect',
+            'flowVersion': '0.53'
+        }
     }
 };
