@@ -22,6 +22,8 @@ This connection link is required to connect the app with the database and will b
 ## Deploy the App on Heroku
 
 The *PhoneBook App* is deployed on [**Heroku Platform**](https://www.heroku.com/platform) from the **dist** directory. To deploy this app on **Heroku** according to the following directions, make sure that you maintain the structure of this repository.
+**Note:** The **Procfile** in the **src** directory is required to speecify the required commands for **Heroku**  to run and start your app.
+
 
 ### Step A: Create an App on Heroku
 
@@ -29,9 +31,7 @@ The *PhoneBook App* is deployed on [**Heroku Platform**](https://www.heroku.com/
 
 2. Create your own app on **Heroku**. The name of your app will be referred from now on as ***YOUR_OWN_HEROKU_APP***.
 
-3. On the ***Settings*** section on **Heroku Platform** get the url of your app. It will be referred from now on as ***YOUR_OWN_APP_URL*** and is the link you will use to access your app.
-
-image
+3. On the **Heroku Platform** navigate to the ***Settings*** and get the url of your app under the ***Domains*** section. It will be referred from now on as ***YOUR_OWN_APP_URL*** and is the link you will use to access your app.
 
 
 ### Step B: Prepare the App for Deployment
