@@ -1,6 +1,6 @@
 # PhoneBook App
 
-The *PhoneBook App* is a Web App, namely a digital phonebook, where users can manage and display phonenumbers of desired persons.  This app was developed in the context of the ***Full Stack Open 2019 - Deep Dive Into Modern Web Development*** open course from the University of Helsinki and is a roof-of-concept app that illustrates the fullstack development and the deployment of an app.
+The *PhoneBook App* is a Web App, namely a digital phonebook, where users can manage and display phonenumbers of desired persons.  This app was developed in the context of the ***Full Stack Open 2019 - Deep Dive Into Modern Web Development*** open course from the University of Helsinki and is a proof-of-concept app that illustrates the fullstack development and the deployment of an app.
 
  Access the *PhoneBook App* here: [**PhoneBook**](https://phonebook-app-demo.herokuapp.com/)
 
