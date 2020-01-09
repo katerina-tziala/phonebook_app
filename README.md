@@ -19,9 +19,9 @@ This connection link is required to connect the app with the database and will b
 * The name of the database for this app is **phonebook**! You can set your own name for the database. 
 <br/>
 
-## Deploying the App on Heroku
+## Deploy the App on Heroku
 
-This app is deployed on [**Heroku Platform**](https://www.heroku.com/platform) from the **dist** directory. To deploy this app on **Heroku** according to the following directions, make sure that you maintain the structure of this repository.
+The *PhoneBook App* is deployed on [**Heroku Platform**](https://www.heroku.com/platform) from the **dist** directory. To deploy this app on **Heroku** according to the following directions, make sure that you maintain the structure of this repository.
 
 ### Step A: Create an App on Heroku
 
@@ -63,6 +63,13 @@ For example, for this app the *proxy* specified in the **package.json** file loc
 10. From the root directory run ***npm run dist-frontend*** to build the frontend side of the app and move it to the **dist** directory.
 
 11. Commit your changes on your own repo on [**GitHub**](https://github.com/) maintaining the structure of this repository.
+
+
+### Step C: Deploy the App
+
+To deploy the *PhoneBook App* on **Heroku** use your terminal from the root directory of your repository to ecexute the following commands. If you use [**Visual Studio Code**](https://code.visualstudio.com/), install the [**Heroku plugin**](https://marketplace.visualstudio.com/items?itemName=ivangabriele.vscode-heroku)and use the *Terminal* provided by the **Visual Studio Code**.
+
+1. Run ***heroku login*** to login to your **Heroku** account.
 
 
 

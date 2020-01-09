@@ -9,7 +9,8 @@
     "copy-procfile": "ncp src/Procfile dist/Procfile",
     "dist-backend": "npm run copy-backend-models && npm run copy-backend-index && npm run copy-backend-package && npm run copy-procfile",
     "build-frontend": "cd src/frontend && npm run build --prod",
-    "dist-frontend": "cd src/frontend && npm run build --prod && move build ../../dist/"
+    "dist-frontend": "cd src/frontend && npm run build --prod && move build ../../dist/",
+    "logs:prod": "heroku logs --tail"
   },
   "repository": {
     "type": "git",
