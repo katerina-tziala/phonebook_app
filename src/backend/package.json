@@ -1,18 +1,16 @@
 {
   "name": "phonebook_backend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "watch": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-frontend": "cd ../frontend && npm run build --prod && move build ../backend/",
     "lint": "eslint ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katerina-tziala/phonebook_app/tree/master/backend"
+    "url": "git+https://github.com/katerina-tziala/phonebook_app/tree/master/src/backend"
   },
   "author": "Katerina Tziala",
   "license": "ISC",
