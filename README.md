@@ -18,12 +18,12 @@ Here’s a high level list of the technologies used for this app:
 * Heroku: A cloud platform to deploy the app on the internet.
 
 
-## Connect the PhoneBook App to MongoDB
+## Connect to MongoDB
 
 To connect the *PhoneBook App* to MongoDB  follow the instructions in the [**README_DB_CONNECTION**](https://github.com/katerina-tziala/phonebook_app/blob/master/README_DB_CONNECTION.md) file.
 
 
-## Deploy the PhoneBook App on Heroku
+## Deploy on Heroku
 
 To deploy the *PhoneBook App* on **Heroku** follow the instructions in the [**README_DEPLOYMENT**](https://github.com/katerina-tziala/phonebook_app/blob/master/README_DEPLOYMENT.md) file.
 
