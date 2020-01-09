@@ -10,7 +10,7 @@
 
         mongodb+srv://<username>:<password>@cluster0-xq5jf.mongodb.net/<nameofdatabse>?retryWrites=true"&"w=majority
 
-This connection link is required to connect the app with the database and will be referred from now on as ***YOUR OWN MONGODB_URI***.
+This connection link is required to connect the app with the database and will be referred from now on as ***YOUR_OWN_MONGODB_URI***.
    
 **Notes:**
 
@@ -21,18 +21,37 @@ This connection link is required to connect the app with the database and will b
 
 ## Deploying the App to Heroku
 
-1. Fork and clone this repository.
+The app is deployed on [**Heroku**](https://www.heroku.com/platform) from the **dist** directory. To deploy this app:
 
-2. From the root directory run ***npm install*** or ***npm i*** to install the project's dependencies.
+1. Create your own account on [**Heroku**](https://www.heroku.com/platform) and create a new app.
 
-3. Navigate from your terminal inside the /src/backend directory and run ***npm install*** or ***npm i*** to install all the dependencies of the backend side of the app.
+2. On the ***Settings*** section on **Heroku Platform** get the url of your app. It will be referred from now on as ***YOUR_OWN_APP_URL***.
+image
+3. Fork and clone this repository.
 
-4. Navigate from your terminal inside the /src/frontend directory and run ***npm install*** or ***npm i*** to install all the dependencies of the frontend side of the app.
+4. From the root directory run ***npm install*** or ***npm i*** to install the project's dependencies.
 
+5. Navigate from your terminal inside the /src/backend directory and run ***npm install*** or ***npm i*** to install all the dependencies of the backend side of the app.
 
+6. Navigate from your terminal inside the /src/frontend directory and run ***npm install*** or ***npm i*** to install all the dependencies of the frontend side of the app.
 
+7. Clear the **dist** directory (remove all files). 
 
+8. From the root directory run ***npm run dist-backend*** to copy the required files for the backend side of the app to the dist folder.
 
+9. From the root directory run ***npm run dist-backend*** to copy the required files for the backend side of the app to the dist folder.
+
+10. To make express show the static content of the app (the index.html page, the JavaScript etc.) add the following line of code in the **index.js** file located in the **dist** directory:
+
+        app.use(express.static('build'));
+
+11. Add the following line in the **package.json** file located in the **dist** directory:
+
+        "proxy": "YOUR_OWN_APP_URL"
+
+For example, for this app the *proxy* specified in the **package.json** file located in the **dist** directory is :
+
+        "proxy": "https://phonebook-app-demo.herokuapp.com/"
 
 
 <!-- 
