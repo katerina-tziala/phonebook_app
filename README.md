@@ -27,7 +27,9 @@ The *PhoneBook App* is deployed on [**Heroku Platform**](https://www.heroku.com/
 
 1. Create your own account on [**Heroku**](https://www.heroku.com/platform) and create a new app.
 
-2. On the ***Settings*** section on **Heroku Platform** get the url of your app. It will be referred from now on as ***YOUR_OWN_APP_URL*** and is the link you will use to access your app.
+2. Create your own app on **Heroku**. The name of your app will be referred from now on as ***YOUR_OWN_HEROKU_APP***.
+
+3. On the ***Settings*** section on **Heroku Platform** get the url of your app. It will be referred from now on as ***YOUR_OWN_APP_URL*** and is the link you will use to access your app.
 
 image
 
@@ -71,10 +73,58 @@ To deploy the *PhoneBook App* on **Heroku** use your terminal from the root dire
 
 1. Run ***heroku login*** to login to your **Heroku** account.
 
+2. Run ***heroku git:remote -a YOUR_OWN_HEROKU_APP*** to set a git a remote for your **Heroku** app.
+
+3. Run ***heroku config:set MONGODB_URI=YOUR_OWN_MONGODB_URI*** to set the connection link for the database on your **Heroku** app.
+
+4. Run ***git subtree push --prefix dist heroku master*** to deploy the *PhoneBook App* from the **dist** directory of this repository on **Heroku**.
 
 
+## Update the Deployed App on Heroku
+
+1. Clear the **dist** directory (remove all files) or remove the files that will be updated. 
+
+2. If you update the backend side of the app, copy the required files for the backend side of the app to the dist folder as stated above.
+
+   **Note:** Make sure that you add the correct *proxy*  in the **package.json** file located in the **dist** directory, and you add the 
+
+        app.use(express.static('build'));
+
+   line of code in the **index.js** file located in the **dist** to serve the static files of the app.
+
+
+3. If you update the frontend side of the app, build and move the required files for the frontend side of the app to the dist folder as stated above.
+
+4. Commit your changes on your own repo on [**GitHub**](https://github.com/) for this app.
+
+5. Run ***heroku login*** to login to your **Heroku** account.
+
+6. Run ***git subtree push --prefix dist heroku master*** to deploy the updated *PhoneBook App* from the **dist** directory of this repository on **Heroku**.
+
+
+<!-- heroku config:set MONGODB_URI=mongodb+srv://fullstack:fullstackKT6890@cluster0-xq5jf.mongodb.net/phonebook?retryWrites=true"&"w=majority -->
+
+ <!-- heroku git:remote -a phonebook-app-demo -->
+
+
+To make express show the static content of the app (the index.html page, the JavaScript etc.) add the following line of code in the **index.js** file located in the **dist** directory:
+
+        
+
+9. Add the following line in the **package.json** file located in the **dist** directory:
+
+        "proxy": "YOUR_OWN_APP_URL"
+
+For example, for this app the *proxy* specified in the **package.json** file located in the **dist** directory is :
+
+        "proxy": "https://phonebook-app-demo.herokuapp.com/"
 
 <!-- 
+Commit a text file to your app’s root directory that is named Procfile without a file extension. This file tells Heroku which command(s) to run to start your app. These commands are probably the same as the ones you use to run your code on your local machine.
+
+Here’s an example Procfile for a simple Node.js app:
+
+
 Access the app here: <a href="https://phonebook-app-kt.herokuapp.com/" target="blank">PhoneBook App</a>
 
 <h2>Setup of the Project</h2>
