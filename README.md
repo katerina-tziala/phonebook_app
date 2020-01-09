@@ -16,7 +16,7 @@ This connection link is required to connect the app with the database and will b
 
 * Make sure that you use the correct credentials (**username** and **password**) in the connection link.
 
-* The name of the database for this app is **phonebook**! You can set your own name for the daabase. 
+* The name of the database for this app is **phonebook**! You can set your own name for the database. 
 <br/>
 <br/>
 
@@ -26,9 +26,9 @@ This connection link is required to connect the app with the database and will b
 
 2. From the root directory run ***npm install*** or ***npm i*** to install the project's dependencies.
 
-3. Navigate from your terminal inside the /backend directory and run ***npm install*** or ***npm i*** to install all the dependencies of the backend side of the app.
+3. Navigate from your terminal inside the /src/backend directory and run ***npm install*** or ***npm i*** to install all the dependencies of the backend side of the app.
 
-4. Navigate from your terminal inside the /frontend directory and run ***npm install*** or ***npm i*** to install all the dependencies of the frontend side of the app.
+4. Navigate from your terminal inside the /src/frontend directory and run ***npm install*** or ***npm i*** to install all the dependencies of the frontend side of the app.
 
 
 
