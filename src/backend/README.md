@@ -14,7 +14,7 @@ The *PhoneBook API* contains the code for the developed API (backend side) of th
 
 1. Make sure that all the dependencies of the *PhoneBook API* are installed.
 
-2. Create **YOUR_OWN_MONGODB_URI** as specified in the [**README**](https://github.com/katerina-tziala/phonebook_app/blob/master/README.md) file in the root directory of this repository.
+2. Create **YOUR_OWN_MONGODB_URI** as specified in the [**README_DB_CONNECTION**](https://github.com/katerina-tziala/phonebook_app/blob/master/README_DB_CONNECTION.md) file in the root directory of this repository.
 
 3. In the **.env** file at the root of the project set the *'MONGODB_URI'* variable with the value of **YOUR_OWN_MONGODB_URI**.
 
@@ -32,7 +32,7 @@ The *PhoneBook API* contains the code for the developed API (backend side) of th
 
 1. Make sure that all the dependencies of the *PhoneBook API* are installed.
 
-2. Create **YOUR_OWN_MONGODB_URI** as specified in the [**README**](https://github.com/katerina-tziala/phonebook_app/blob/master/README.md) file in the root directory of this repository.
+2. Create **YOUR_OWN_MONGODB_URI** as specified in the [**README_DB_CONNECTION**](https://github.com/katerina-tziala/phonebook_app/blob/master/README_DB_CONNECTION.md) file in the root directory of this repository.
 
 3. In the **mongo.js** file at the root of the project set the *'DB_USERNAME'* variable with the username of the created database user, and the *'DB_URI'* variable with the part of your connection string ( **YOUR_OWN_MONGODB_URI**) that starts with *@cluster*...:
 

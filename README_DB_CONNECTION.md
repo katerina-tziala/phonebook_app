@@ -1,4 +1,4 @@
-# Connect the PhoneBook App to the Database
+# Connect the PhoneBook App to MongoDB
 
 1. Create your own account on [**MongoDb**](https://www.mongodb.com/cloud), create a cluster, add a database user, and get your credentials for the database access.
 

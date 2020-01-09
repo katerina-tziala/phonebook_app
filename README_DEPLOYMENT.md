@@ -54,7 +54,7 @@ To deploy the *PhoneBook App* on **Heroku** use your terminal from the root dire
 
 2. Run ***heroku git:remote -a YOUR_OWN_HEROKU_APP*** to set a git a remote for your **Heroku** app.
 
-3. Run ***heroku config:set MONGODB_URI=YOUR_OWN_MONGODB_URI*** to set the connection link for the database on your **Heroku** app. Create **YOUR_OWN_MONGODB_URI** as specified in the [**README**](https://github.com/katerina-tziala/phonebook_app/blob/master/README.md) file in the root directory of this repository.
+3. Run ***heroku config:set MONGODB_URI=YOUR_OWN_MONGODB_URI*** to set the connection link for the database on your **Heroku** app. Create **YOUR_OWN_MONGODB_URI** as specified in the [**README_DB_CONNECTION**](https://github.com/katerina-tziala/phonebook_app/blob/master/README_DB_CONNECTION.md) file in the root directory of this repository.
 
 4. Run ***git subtree push --prefix dist heroku master*** to deploy the *PhoneBook App* from the **dist** directory of this repository on **Heroku**.
 
