@@ -80,7 +80,7 @@ To deploy the *PhoneBook App* on **Heroku** use your terminal from the root dire
 4. Run ***git subtree push --prefix dist heroku master*** to deploy the *PhoneBook App* from the **dist** directory of this repository on **Heroku**.
 
 **Note:** To show the heroku logs in case anything goes wrong run the command ***npm run logs:prod***.
-<br/>
+<br/><br/>
 
 ## Update the Deployed App on Heroku
 
