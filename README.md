@@ -53,6 +53,12 @@ For example, for this app the *proxy* specified in the **package.json** file loc
 
         "proxy": "https://phonebook-app-demo.herokuapp.com/"
 
+12. From the root directory run ***npm run dist-frontend*** to build the frontend code of the app and move it to the **dist** directory.
+
+13. Commit your changes on your own repo on [**GitHub**](https://github.com/) maintaining the structure of this repository.
+
+
+
 
 <!-- 
 Access the app here: <a href="https://phonebook-app-kt.herokuapp.com/" target="blank">PhoneBook App</a>
