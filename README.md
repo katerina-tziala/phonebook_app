@@ -17,7 +17,7 @@ This connection link is required to connect the app with the database and will b
 * Make sure that you use the correct credentials (**username** and **password**) in the connection link.
 
 * The name of the database for this app is **phonebook**! You can set your own name for the database. 
-
+<br/>
 
 ## Deploy the App on Heroku
 
@@ -80,7 +80,7 @@ To deploy the *PhoneBook App* on **Heroku** use your terminal from the root dire
 4. Run ***git subtree push --prefix dist heroku master*** to deploy the *PhoneBook App* from the **dist** directory of this repository on **Heroku**.
 
 **Note:** To show the heroku logs in case anything goes wrong run the command ***npm run logs:prod***.
-
+<br/>
 
 ## Update the Deployed App on Heroku
 
