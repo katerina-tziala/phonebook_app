@@ -1,9 +1,9 @@
-# phonebook_app
+# PhoneBook App
 
 
 
 
-
+<!-- 
 Access the app here: <a href="https://phonebook-app-kt.herokuapp.com/" target="blank">PhoneBook App</a>
 
 <h2>Setup of the Project</h2>
@@ -43,4 +43,4 @@ Access the app here: <a href="https://phonebook-app-kt.herokuapp.com/" target="b
 
         const baseUrl = 'https://phonebook-app-kt.herokuapp.com/api/persons';
 
-**3.** Navigate from your terminal inside the /frontend folder and run ***npm start***.
+**3.** Navigate from your terminal inside the /frontend folder and run ***npm start***. -->
