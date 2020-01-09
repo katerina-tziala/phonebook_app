@@ -16,8 +16,7 @@ Here’s a high level list of the technologies used for this app:
 * MongoDB: A document database that stores data in flexible JSON-like format.
 
 * Heroku: A cloud platform to deploy the app on the internet.
-
-
+<br/>
 
 ## Connect the PhoneBook App to the Database
 
