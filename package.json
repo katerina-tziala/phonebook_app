@@ -1,16 +1,15 @@
 {
   "name": "phonebook_app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "watch": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-frontend": "cd frontend && npm run build --prod && move build ../",
-    "heroku-push": "git push heroku master",
-    "deploy": "npm run build-frontend && git add . && git commit -m uibuild && npm run heroku-push",
-    "logs:prod": "heroku logs --tail"
+    "copy-backend-models": "ncp src/backend/models dist/models",
+    "copy-backend-index": "ncp src/backend/index.js dist/index.js",
+    "copy-backend-package": "ncp src/backend/package.json dist/package.json",
+    "copy-procfile": "ncp src/Procfile dist/Procfile",
+    "dist-backend": "npm run copy-backend-models && npm run copy-backend-index && npm run copy-backend-package && npm run copy-procfile",
+    "build-frontend": "cd src/frontend && npm run build --prod",
+    "dist-frontend": "cd src/frontend && npm run build --prod && move build ../../dist/"
   },
   "repository": {
     "type": "git",
@@ -18,16 +17,7 @@
   },
   "author": "Katerina Tziala",
   "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.7.13",
-    "mongoose-unique-validator": "^2.0.3",
-    "morgan": "^1.9.1"
-  },
   "devDependencies": {
-    "nodemon": "^1.19.4"
-  },
-  "proxy": "https://phonebook-app-kt.herokuapp.com"
+    "ncp": "^2.0.0"
+  }
 }
