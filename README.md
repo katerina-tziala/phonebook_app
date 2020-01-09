@@ -18,7 +18,6 @@ This connection link is required to connect the app with the database and will b
 
 * The name of the database for this app is **phonebook**! You can set your own name for the database. 
 <br/>
-<br/>
 
 ## Deploying the App to Heroku
 
