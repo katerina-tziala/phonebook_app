@@ -79,7 +79,7 @@ To deploy the *PhoneBook App* on **Heroku** use your terminal from the root dire
 
 4. Run ***git subtree push --prefix dist heroku master*** to deploy the *PhoneBook App* from the **dist** directory of this repository on **Heroku**.
 
-**Note:** To show the heroku logs in case anything goes wrong run the command ***npm run logs:prod***,
+**Note:** To show the heroku logs in case anything goes wrong run the command ***npm run logs:prod***.
 
 
 
@@ -104,7 +104,7 @@ To deploy the *PhoneBook App* on **Heroku** use your terminal from the root dire
 
 6. Run ***git subtree push --prefix dist heroku master*** to deploy the updated *PhoneBook App* from the **dist** directory of this repository on **Heroku**.
 
-**Note:** To show the heroku logs in case anything goes wrong run the command ***npm run logs:prod***,
+**Note:** To show the heroku logs in case anything goes wrong run the command ***npm run logs:prod***.
 
 
 <!-- heroku config:set MONGODB_URI=mongodb+srv://fullstack:fullstackKT6890@cluster0-xq5jf.mongodb.net/phonebook?retryWrites=true"&"w=majority -->
