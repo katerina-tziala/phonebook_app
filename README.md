@@ -4,6 +4,21 @@ The *PhoneBook App* is a Web App, namely a digital phonebook, where users can ma
 
  Access the *PhoneBook App* here: [**PhoneBook**](https://phonebook-app-demo.herokuapp.com/)
 
+
+## Technologies
+
+Here’s a high level list of the technologies used for this app:
+
+* React: For the development of the frontend of the *PhoneBook App*.
+
+* NodeJS and Express: For the development of the *Phonebook API*.
+
+* MongoDB: A document database that stores data in flexible JSON-like format.
+
+* Heroku: A cloud platform to deploy the app on the internet.
+
+
+
 ## Connect the PhoneBook App to the Database
 
 1. Create your own account on [**MongoDb**](https://www.mongodb.com/cloud), create a cluster, add a database user, and get your credentials for the database access.
