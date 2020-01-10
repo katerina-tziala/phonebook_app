@@ -8,7 +8,7 @@
     "copy-backend-package": "ncp src/backend/package.json dist/package.json",
     "copy-procfile": "ncp src/Procfile dist/Procfile",
     "dist-backend": "npm run copy-backend-models && npm run copy-backend-index && npm run copy-backend-package && npm run copy-procfile",
-    "build-frontend": "cd src/frontend && npm run build --prod",
+    "build-frontend-dev": "cd src/frontend && npm run build --prod && move build ../backend/",
     "dist-frontend": "cd src/frontend && npm run build --prod && move build ../../dist/",
     "logs:prod": "heroku logs --tail"
   },
