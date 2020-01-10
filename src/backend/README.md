@@ -21,6 +21,7 @@ The *PhoneBook API* contains the code for the developed API (backend side) of th
 4. Navigate from your terminal inside the /src/backend directory and run ***npm run start*** to start the server of the API.
 
 
+
 ## Linting the App
 
 1. Make sure that all the dependencies of the *PhoneBook API* are installed.
