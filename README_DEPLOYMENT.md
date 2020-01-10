@@ -42,11 +42,7 @@ To deploy the *PhoneBook App* on **Heroku** use your terminal from the root dire
 
 3. From the root directory run ***npm run dist-backend*** to copy the required files for the backend side of the app to the dist folder.
 
-4. To make sure that express will show the static content of the app (the index.html page, the JavaScript etc.) add the following line of code in the **index.js** file located in the **dist** directory:
-
-        app.use(express.static('build'));
-
-5. Add the following line in the **package.json** file located in the **dist** directory:
+4. Add the following line in the **package.json** file located in the **dist** directory:
 
         "proxy": "YOUR_OWN_APP_URL"
 

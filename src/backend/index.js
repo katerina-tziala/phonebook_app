@@ -12,6 +12,7 @@ const DB_URL = process.env.MONGODB_URI;
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.static('build'));
 app.use(morgan((tokens, req, res) => {
     const stringParts = [];
     const method = tokens.method(req, res);
