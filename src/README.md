@@ -30,9 +30,10 @@ For example, for this app the *proxy* specified in the **package.json** file loc
 
 4. Navigate from your terminal inside the /src/frontend directory and run ***npm start***.
 
+5. Access the app at http://localhost:3000/.
+
 
 ## Running the Backend And Serving Static Files
-
 
 1. Make sure that all the dependencies of the *PhoneBook App* are installed (root directory).
 

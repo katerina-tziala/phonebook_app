@@ -19,6 +19,8 @@ The *PhoneBook App* is a simple React App, a digital phonebook, where users can 
 
 3. Navigate from your terminal inside the /src/frontend directory and run ***npm start***.
 
+4. Access the app at http://localhost:3000/.
+
 
 ## Linting the App
 
