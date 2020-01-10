@@ -19,13 +19,13 @@ This repository contains two sub-directories:
 
 Here’s a high level list of the technologies used for this app:
 
-* React: For the development of the frontend of the *PhoneBook App*.
+* **React**: For the development of the frontend of the *PhoneBook App*.
 
-* NodeJS and Express: For the development of the *Phonebook API*.
+* **NodeJS** and Express: For the development of the *Phonebook API*.
 
-* MongoDB: A document database that stores data in flexible JSON-like format.
+* **MongoDB**: A document database that stores data in flexible JSON-like format.
 
-* Heroku: A cloud platform to deploy the app on the internet.
+* **Heroku**: A cloud platform to deploy the app on the internet.
 
 
 ## Connect to MongoDB
