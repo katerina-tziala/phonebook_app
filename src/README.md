@@ -18,7 +18,7 @@ To run the app locally, both parts of the app (backend and frontend) should run 
 
 1. Deploy the *PhoneBook API* on **Heroku**, according to the instructions on the **Step C: Deploy the Backend of the App** section in the [**README_DEPLOYMENT**](https://github.com/katerina-tziala/phonebook_app/blob/master/README_DEPLOYMENT.md) file located in the root directory of this repository, (if you haven't done it already).
 
-2. Make sure that all the dependencies of the frontend side of the *PhoneBook App*  are installed.
+2. Make sure that all the dependencies of the frontend side of the *PhoneBook App* are installed (frontend directory).
 
 3. Make sure that the *proxy* in the **package.json** file is defined as:
     
@@ -30,3 +30,18 @@ For example, for this app the *proxy* specified in the **package.json** file loc
 
 4. Navigate from your terminal inside the /src/frontend directory and run ***npm start***.
 
+
+## Running the Backend And Serving Static Files
+
+
+1. Make sure that all the dependencies of the *PhoneBook App* are installed (root directory).
+
+2. Make sure that all the dependencies of the frontend side of the *PhoneBook App* are installed (frontend directory).
+
+3. Make sure that all the dependencies of the *PhoneBook API* are installed (backend directory).
+
+4. From the root directory of this repository run ***npm run build-frontend-dev*** to build the frontend side of the app and move it into the **src/backend** directory.
+
+4. From the src/backend directory run ***npm run start*** to run the app.
+
+5. Access the app at http://localhost:3001/.

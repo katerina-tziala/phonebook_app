@@ -19,7 +19,7 @@ To deploy the *PhoneBook App* on **Heroku** use your terminal from the root dire
 
 1. Fork and clone this repository.
 
-2. From the root directory run ***npm install*** or ***npm i*** to install the project's dependencies.
+2. From the root directory of this repository run ***npm install*** or ***npm i*** to install the project's dependencies.
 
 3. Clear the **dist** directory (remove all files). 
 
@@ -36,11 +36,11 @@ To deploy the *PhoneBook App* on **Heroku** use your terminal from the root dire
 
 1. Make sure that the **dist** directory is empty. 
 
-2. Make sure that all the dependencies of the *PhoneBook App* are installed.
+2. Make sure that all the dependencies of the *PhoneBook App* are installed (root directory).
 
 3. Navigate from your terminal inside the /src/backend directory and run ***npm install*** or ***npm i*** to install all the dependencies of the backend side of the app.
 
-3. From the root directory run ***npm run dist-backend*** to copy the required files for the backend side of the app to the dist folder.
+3. From the root directory of this repository run ***npm run dist-backend*** to copy the required files for the backend side of the app to the dist folder.
 
 4. Add the following line in the **package.json** file located in the **dist** directory:
 
@@ -67,7 +67,7 @@ For example, for this app the *proxy* specified in the **package.json** file loc
 
 3. Navigate from your terminal inside the /src/frontend directory and run ***npm install*** or ***npm i*** to install all the dependencies of the frontend side of the app.
 
-3. From the root directory run ***npm run dist-frontend*** to build the frontend side of the app and move it to the **dist** directory.
+3. From the root directory of this repository run ***npm run dist-frontend*** to build the frontend side of the app and move it into the **dist** directory.
 
 4. Commit your changes on your own repo on [**GitHub**](https://github.com/) for this app, maintaining the structure of this repository.
 
