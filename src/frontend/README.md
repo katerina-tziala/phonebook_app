@@ -13,7 +13,11 @@ The *PhoneBook App* is a simple React App, a digital phonebook, where users can 
 ## Running the App Locally
 1. Make sure that all the dependencies of the *PhoneBook App* are installed.
 
-2. Navigate from your terminal inside the /src/frontend directory and run ***npm start***.
+2. Make sure that the *proxy* in the **package.json** file located in this directory is defined as:
+    
+     "proxy": "http://localhost:3001"
+
+3. Navigate from your terminal inside the /src/frontend directory and run ***npm start***.
 
 
 ## Linting the App
