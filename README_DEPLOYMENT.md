@@ -1,7 +1,7 @@
 # Deploy the PhoneBook App on Heroku
 
-The *PhoneBook App* is deployed on [**Heroku Platform**](https://www.heroku.com/platform) from the **dist** directory. To deploy this app on **Heroku** according to the following directions, make sure that you maintain the structure of this repository.
-**Note:** The **Procfile** in the **src** directory is required to speecify the required commands for **Heroku**  to run and start your app and must be copied in the **dist** directory!
+The *PhoneBook App* is deployed on [**Heroku Platform**](https://www.heroku.com/platform) from the **dist** directory. To deploy this app on **Heroku** according to the following directions, make sure that you maintain the structure of this repository.<br/>
+**Note:** The **Procfile** in the **src** directory is required to specify the required commands for **Heroku**  to run and start your app and must be copied in the **dist** directory!
 
 To deploy the *PhoneBook App* on **Heroku** use your terminal from the root directory of your repository to execute the following commands. If you use [**Visual Studio Code**](https://code.visualstudio.com/), install the [**Heroku plugin**](https://marketplace.visualstudio.com/items?itemName=ivangabriele.vscode-heroku) and use the *Terminal* provided by the **Visual Studio Code**.
 
