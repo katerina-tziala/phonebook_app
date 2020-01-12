@@ -43,13 +43,13 @@ To deploy the *PhoneBook App* on **Heroku** use your terminal from the root dire
 3. From the root directory of this repository run ***npm run dist-backend*** to copy the required files for the backend side of the app to the dist folder.
 
 4. Add the following line in the **package.json** file located in the **dist** directory:
-
-        "proxy": "YOUR_OWN_APP_URL"
-
-For example, for this app the *proxy* specified in the **package.json** file located in the **dist** directory is :
-
-        "proxy": "https://phonebook-app-demo.herokuapp.com/"
-
+   ```
+   "proxy": "YOUR_OWN_APP_URL"
+   ```
+   For example, for this app the *proxy* specified in the **package.json** file located in the **dist** directory is :
+   ```    
+   "proxy": "https://phonebook-app-demo.herokuapp.com/"
+   ```
 6. Commit your changes on your own repo on [**GitHub**](https://github.com/) for this app,  maintaining the structure of this repository.
 
 7. Run ***heroku login*** to login to your **Heroku** account.
