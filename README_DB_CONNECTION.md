@@ -5,7 +5,7 @@
 2. Create your own connection link for the database connection according to the following form:
 
    ```
-   mongodb+srv://<username>:<password>@cluster0-xq5jf.mongodb.net/<database>?retryWrites=true"&"w=majority
+   mongodb+srv://<username>:<password>cluster0-xq5jf.mongodb.net/<database>?retryWrites=true"&"w=majority
    ```
 
 This connection link is required to connect the app with the database and will be referred from now on as ***YOUR_OWN_MONGODB_URI***.
