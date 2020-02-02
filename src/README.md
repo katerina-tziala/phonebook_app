@@ -23,11 +23,11 @@ To run the app locally, both parts of the app (backend and frontend) should run 
    "proxy": "YOUR_OWN_APP_URL"
    ```
 
-For example, for this app the *proxy* specified in the **package.json** file located in the **frontend** directory is :
+   For example, for this app the *proxy* specified in the **package.json** file located in the **frontend** directory is :
 
-```
-"proxy": "https://phonebook-app-demo.herokuapp.com/"
-```
+   ```
+   "proxy": "https://phonebook-app-demo.herokuapp.com/"
+   ```
 
 4. Navigate from your terminal inside the /src/frontend directory and run ***npm start***.
 
