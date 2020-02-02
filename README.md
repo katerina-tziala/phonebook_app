@@ -4,8 +4,6 @@ The *PhoneBook App* is a Web App, namely a digital phonebook, where users can ma
 
 Access the *PhoneBook App* here: [**PhoneBook**](https://phonebook-app-demo.herokuapp.com/)
 
-
-
 ## Repository Structure
 
 This repository contains two sub-directories:
@@ -13,7 +11,6 @@ This repository contains two sub-directories:
 * [**src**](https://github.com/katerina-tziala/phonebook_app/tree/master/src)**:** This directory contains the source code of the developed *PhoneBook App*. 
 
 * [**dist**](https://github.com/katerina-tziala/phonebook_app/tree/master/dist)**:** This directory is set as the git a remote for the *Heroku PhoneBook App*. The files in this directory are required from **Heroku** to deploy the *PhoneBook App* online.
-
 
 ## Technologies
 
@@ -27,11 +24,9 @@ Here’s a high level list of the technologies used for this app:
 
 * **Heroku**: A cloud platform to deploy the app on the internet.
 
-
 ## Connect to MongoDB
 
 To connect the *PhoneBook App* to MongoDB  follow the instructions in the [**README_DB_CONNECTION**](https://github.com/katerina-tziala/phonebook_app/blob/master/README_DB_CONNECTION.md) file.
-
 
 ## Deploy on Heroku
 
