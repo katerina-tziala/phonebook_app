@@ -8,11 +8,9 @@ The *PhoneBook App* consists of two parts:
 
 * [**frontend**](https://github.com/katerina-tziala/phonebook_app/tree/master/src/frontend)**:** This directory contains the code of the frontend side of the app.
 
-
 ## Running the App Locally
 
 To run the app locally, both parts of the app (backend and frontend) should run in parallel (different terminals). Follow the instructions in the *README* file, located in the root directory of each part, to compile and run the app locally.
-
 
 ## Running the Frontend Locally With Deployed Backend On Heroku
 
@@ -21,17 +19,19 @@ To run the app locally, both parts of the app (backend and frontend) should run 
 2. Make sure that all the dependencies of the frontend side of the *PhoneBook App* are installed (frontend directory).
 
 3. Make sure that the *proxy* in the **package.json** file is defined as:
-    
-     "proxy": "YOUR_OWN_APP_URL"
+   ```
+   "proxy": "YOUR_OWN_APP_URL"
+   ```
 
 For example, for this app the *proxy* specified in the **package.json** file located in the **frontend** directory is :
 
-        "proxy": "https://phonebook-app-demo.herokuapp.com/"
+```
+"proxy": "https://phonebook-app-demo.herokuapp.com/"
+```
 
 4. Navigate from your terminal inside the /src/frontend directory and run ***npm start***.
 
-5. Access the app at http://localhost:3000/.
-
+5. Access the app locally at: ```http://localhost:3000/```
 
 ## Running the Backend And Serving Static Files
 
@@ -43,6 +43,6 @@ For example, for this app the *proxy* specified in the **package.json** file loc
 
 4. From the root directory of this repository run ***npm run build-frontend-dev*** to build the frontend side of the app and move it into the **src/backend** directory.
 
-4. From the src/backend directory run ***npm run start*** to run the app.
+5. From the src/backend directory run ***npm run start*** to run the app.
 
-5. Access the app at http://localhost:3001/.
+6. Access the app locally at: ```http://localhost:3001/```
