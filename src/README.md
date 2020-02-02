@@ -29,7 +29,11 @@ To run the app locally, both parts of the app (backend and frontend) should run 
    "proxy": "https://phonebook-app-demo.herokuapp.com/"
    ```
 
-4. Navigate from your terminal inside the /src/frontend directory and run ***npm start***.
+4. Navigate from your terminal inside the ***src/frontend*** directory and run:
+
+    ```
+    npm start
+    ```
 
 5. Access the app locally at: ```http://localhost:3000/```
 
@@ -41,8 +45,15 @@ To run the app locally, both parts of the app (backend and frontend) should run 
 
 3. Make sure that all the dependencies of the *PhoneBook API* are installed (backend directory).
 
-4. From the root directory of this repository run ***npm run build-frontend-dev*** to build the frontend side of the app and move it into the **src/backend** directory.
+4. To build the frontend side of the app and move it into the **src/backend** directory, run from the root directory of this repository:
+   ```
+   npm run build-frontend-dev
+   ```
 
-5. From the src/backend directory run ***npm run start*** to run the app.
+5. To run the app, navigate from your terminal inside the ***src/backend*** directory and run:
+
+    ```
+    npm run start
+    ```
 
 6. Access the app locally at: ```http://localhost:3001/```
