@@ -82,7 +82,7 @@ For the *PhoneBook API* you need an account on [**MongoDb**](https://www.mongodb
 
 The application works as follows:
 
-1. Navigate from your terminal inside the ***fullstackopen2019/part3/phonebook_backend*** directory.
+1. Navigate from your terminal inside the ***phonebook_app/src/backend*** directory.
 
 2. To display all of the entries in the phonebook database execute the command:
     ```
